@@ -1,0 +1,752 @@
+<!DOCTYPE html> 
+<html lang="pt-br"> 
+<head> 
+<meta charset="UTF-8"> 
+<style> /* ---------- CONFIGURAÇÃO GERAL ---------- */ 
+body{ font-family: 'Segoe UI', sans-serif; margin:0; padding:50px 20px; color:white; } 
+/* ---------- TÍTULO ---------- */ 
+.titulo-presentes{ text-align:center; font-size:34px; font-weight:600; letter-spacing:1px; margin-bottom:10px; } .subtitulo{ text-align:center; opacity:0.85; margin-bottom:50px; } 
+/* ---------- GRID ---------- */ 
+.grid-presentes{ max-width:1200px; margin:auto; display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:30px; } 
+/* ---------- CARD ---------- */ 
+.card-presente{ background:rgba(255,255,255,0.12); border-radius:18px; border:1px solid rgba(255,255,255,0.25); backdrop-filter:blur(10px); -webkit-backdrop-filter:blur(10px); padding:18px; transition:all .35s ease; position:relative; overflow:hidden; } 
+.card-presente:hover{ transform:translateY(-8px) scale(1.02); box-shadow: 0 15px 35px rgba(0,0,0,0.35); } 
+/* ---------- IMAGEM ---------- */ 
+.img-presente{ width:100%; height:180px; object-fit:cover; border-radius:12px; margin-bottom:15px; } 
+/* ---------- NOME ---------- */ 
+.nome-presente{ font-size:18px; font-weight:600; margin-bottom:6px; } 
+/* ---------- VALOR ---------- */ 
+.valor-presente{ color:#b9ffd1; font-size:16px; margin-bottom:16px; } 
+/* ---------- BOTÃO LUXO ---------- */ 
+.botao-presente{ display:inline-block; padding:12px 26px; border-radius:40px; border:2px solid white; text-decoration:none; color:white; font-weight:500; letter-spacing:0.5px; transition:all .3s ease; } 
+.botao-presente:hover{ background:white; color:#2e7d32; transform:scale(1.05); box-shadow: 0 8px 20px rgba(0,0,0,0.35); } 
+/* ---------- ANIMAÇÃO ENTRADA ---------- */ 
+.card-presente{ opacity:0; transform:translateY(40px); animation:fadeUp 0.8s ease forwards; } 
+.card-presente:nth-child(2){animation-delay:.1s;} 
+.card-presente:nth-child(3){animation-delay:.2s;} 
+.card-presente:nth-child(4){animation-delay:.3s;} 
+.card-presente:nth-child(5){animation-delay:.4s;} 
+.card-presente:nth-child(6){animation-delay:.5s;} @keyframes fadeUp{ to{ opacity:1; transform:translateY(0); } } 
+
+</style> 
+</head> 
+
+<body> 
+<div class="titulo-presentes"> Nossos Presentes </div> 
+  <div class="subtitulo"> Escolha um presente e nos ajude a construir nosso novo lar 💚 </div> 
+  <div class="grid-presentes"> 
+
+<!---------------------------------- abaixo de 100,00 ----------------------------------------->
+<!-- Penteadeira Suspensa -->
+<div class="card-presente">
+<img class="img-presente" src="IMAGEM_DO_PRODUTO">
+<div class="nome-presente"> Penteadeira Suspensa </div>
+<div class="valor-presente"> R$ 54,90 </div>
+<a class="botao-presente" href="LINK_PAGAMENTO" target="_blank"> 🎁 Presentear </a>
+</div>
+
+<!-- Mesa para Computador -->
+<div class="card-presente">
+<img class="img-presente" src="IMAGEM_DO_PRODUTO">
+<div class="nome-presente"> Espremedor de Frutas Mondial </div>
+<div class="valor-presente"> R$ 65,90 </div>
+<a class="botao-presente" href="LINK_PAGAMENTO" target="_blank"> 🎁 Presentear </a>
+</div>
+
+<!-- Mesa para Computador -->
+<div class="card-presente">
+<img class="img-presente" src="IMAGEM_DO_PRODUTO">
+<div class="nome-presente"> Sanduicheira Mondial </div>
+<div class="valor-presente"> R$ 85,90 </div>
+<a class="botao-presente" href="LINK_PAGAMENTO" target="_blank"> 🎁 Presentear </a>
+</div>
+
+<!-- Penteadeira Suspensa -->
+<div class="card-presente">
+<img class="img-presente" src="IMAGEM_DO_PRODUTO">
+<div class="nome-presente"> Liquidificador Mondial </div>
+<div class="valor-presente"> R$ 99,00 </div>
+<a class="botao-presente" href="LINK_PAGAMENTO" target="_blank"> 🎁 Presentear </a>
+</div>
+
+<!-- Kit 2 Puff Banquinho -->
+<div class="card-presente">
+<img class="img-presente" src="IMAGEM_DO_PRODUTO">
+<div class="nome-presente"> Toalha Forro de Mesa </div>
+<div class="valor-presente"> R$ 53,90 </div>
+<a class="botao-presente" href="LINK_PAGAMENTO" target="_blank"> 🎁 Presentear </a>
+</div>
+
+<!-- Penteadeira Suspensa -->
+<div class="card-presente">
+<img class="img-presente" src="IMAGEM_DO_PRODUTO">
+<div class="nome-presente"> Jogo de Cama Queen 200 Fios </div>
+<div class="valor-presente"> R$ 44,18 </div>
+<a class="botao-presente" href="LINK_PAGAMENTO" target="_blank"> 🎁 Presentear </a>
+</div>
+
+<!-- Mesa de Cabeceira Compacta -->
+<div class="card-presente">
+<img class="img-presente" src="IMAGEM_DO_PRODUTO">
+<div class="nome-presente"> Pano de Prato Pé de Galinha S/Estampa </div>
+<div class="valor-presente"> R$ 38,90 </div>
+<a class="botao-presente" href="LINK_PAGAMENTO" target="_blank"> 🎁 Presentear </a>
+</div>
+
+<!-- Kit Poltrona Decorativa -->
+<div class="card-presente">
+<img class="img-presente" src="IMAGEM_DO_PRODUTO">
+<div class="nome-presente"> Saia para Cama Box Queen </div>
+<div class="valor-presente"> R$ 49,41 </div>
+<a class="botao-presente" href="LINK_PAGAMENTO" target="_blank"> 🎁 Presentear </a>
+</div>
+
+<!-- Mesa para Computador -->
+<div class="card-presente">
+<img class="img-presente" src="IMAGEM_DO_PRODUTO">
+<div class="nome-presente"> Tapete de Banheiro Absorvente </div>
+<div class="valor-presente"> R$ 24,99 </div>
+<a class="botao-presente" href="LINK_PAGAMENTO" target="_blank"> 🎁 Presentear </a>
+</div>
+
+<!-- Kit 2 Puff Banquinho -->
+<div class="card-presente">
+<img class="img-presente" src="IMAGEM_DO_PRODUTO">
+<div class="nome-presente"> Kit 4 Almofadas Suede </div>
+<div class="valor-presente"> R$ 75,90 </div>
+<a class="botao-presente" href="LINK_PAGAMENTO" target="_blank"> 🎁 Presentear </a>
+</div>
+
+<!-- Penteadeira Suspensa -->
+<div class="card-presente">
+<img class="img-presente" src="IMAGEM_DO_PRODUTO">
+<div class="nome-presente"> Jogo de Toalhas de Banho Karsten </div>
+<div class="valor-presente"> R$ 64,90 </div>
+<a class="botao-presente" href="LINK_PAGAMENTO" target="_blank"> 🎁 Presentear </a>
+</div>
+
+<!-- Kit 2 Puff Banquinho -->
+<div class="card-presente">
+<img class="img-presente" src="IMAGEM_DO_PRODUTO">
+<div class="nome-presente"> Capa Colchão Casal Queen </div>
+<div class="valor-presente"> R$ 66,90 </div>
+<a class="botao-presente" href="LINK_PAGAMENTO" target="_blank"> 🎁 Presentear </a>
+</div>
+
+<!-- Penteadeira Suspensa -->
+<div class="card-presente">
+<img class="img-presente" src="IMAGEM_DO_PRODUTO">
+<div class="nome-presente"> Kit 8 Toalhas Banho Algodão </div>
+<div class="valor-presente"> R$ 98,99 </div>
+<a class="botao-presente" href="LINK_PAGAMENTO" target="_blank"> 🎁 Presentear </a>
+</div>
+
+<!-- Mesa de Cabeceira Compacta -->
+<div class="card-presente">
+<img class="img-presente" src="IMAGEM_DO_PRODUTO">
+<div class="nome-presente"> Jogo de Cama Lençol Queen </div>
+<div class="valor-presente"> R$ 75,04 </div>
+<a class="botao-presente" href="LINK_PAGAMENTO" target="_blank"> 🎁 Presentear </a>
+</div>
+
+<!-- Kit Poltrona Decorativa -->
+<div class="card-presente">
+<img class="img-presente" src="IMAGEM_DO_PRODUTO">
+<div class="nome-presente"> Cortina Blackout 2,70x1,50 </div>
+<div class="valor-presente"> R$ 67,10 </div>
+<a class="botao-presente" href="LINK_PAGAMENTO" target="_blank"> 🎁 Presentear </a>
+</div>
+
+<!-- Mesa para Computador -->
+<div class="card-presente">
+<img class="img-presente" src="IMAGEM_DO_PRODUTO">
+<div class="nome-presente"> Travesseiro de Corpo 40cm x 1,30m </div>
+<div class="valor-presente"> R$ 45,16 </div>
+<a class="botao-presente" href="LINK_PAGAMENTO" target="_blank"> 🎁 Presentear </a>
+</div>
+
+<!-- Mesa de Cabeceira Compacta -->
+<div class="card-presente">
+<img class="img-presente" src="IMAGEM_DO_PRODUTO">
+<div class="nome-presente"> Kit Travesseiro Pena de Ganso 70cmx50cm </div>
+<div class="valor-presente"> R$ 37,99 </div>
+<a class="botao-presente" href="LINK_PAGAMENTO" target="_blank"> 🎁 Presentear </a>
+</div>
+
+<!-- Mesa para Computador -->
+<div class="card-presente">
+<img class="img-presente" src="IMAGEM_DO_PRODUTO">
+<div class="nome-presente"> Fritadeira Elétrica sem Óleo </div>
+<div class="valor-presente"> R$ 79,90 </div>
+<a class="botao-presente" href="LINK_PAGAMENTO" target="_blank"> 🎁 Presentear </a>
+</div>
+
+<!-- Kit 2 Puff Banquinho -->
+<div class="card-presente">
+<img class="img-presente" src="IMAGEM_DO_PRODUTO">
+<div class="nome-presente"> Assadeira Retangular Marinex </div>
+<div class="valor-presente"> R$ 34,99 </div>
+<a class="botao-presente" href="LINK_PAGAMENTO" target="_blank"> 🎁 Presentear </a>
+</div>
+
+<!-- Penteadeira Suspensa -->
+<div class="card-presente">
+<img class="img-presente" src="IMAGEM_DO_PRODUTO">
+<div class="nome-presente"> Conjunto de Cabides </div>
+<div class="valor-presente"> R$ 39,99 </div>
+<a class="botao-presente" href="LINK_PAGAMENTO" target="_blank"> 🎁 Presentear </a>
+</div>
+
+<!-- Mesa de Cabeceira Compacta -->
+<div class="card-presente">
+<img class="img-presente" src="IMAGEM_DO_PRODUTO">
+<div class="nome-presente"> Taça de Vinho Diamond Lyor </div>
+<div class="valor-presente"> R$ 34,99 </div>
+<a class="botao-presente" href="LINK_PAGAMENTO" target="_blank"> 🎁 Presentear </a>
+</div>
+
+<!-- Kit Poltrona Decorativa -->
+<div class="card-presente">
+<img class="img-presente" src="IMAGEM_DO_PRODUTO">
+<div class="nome-presente"> Jogo de Assadeiras Retangular </div>
+<div class="valor-presente"> R$ 69,99 </div>
+<a class="botao-presente" href="LINK_PAGAMENTO" target="_blank"> 🎁 Presentear </a>
+</div>
+
+<!-- Kit Poltrona Decorativa -->
+<div class="card-presente">
+<img class="img-presente" src="IMAGEM_DO_PRODUTO">
+<div class="nome-presente"> Toalha de Banho Algodão </div>
+<div class="valor-presente"> R$ 79,99 </div>
+<a class="botao-presente" href="LINK_PAGAMENTO" target="_blank"> 🎁 Presentear </a>
+</div>
+
+<!-- Mesa de Cabeceira Compacta -->
+<div class="card-presente">
+<img class="img-presente" src="IMAGEM_DO_PRODUTO">
+<div class="nome-presente"> Jogo de Copos de Vidro Havan </div>
+<div class="valor-presente"> R$ 29,99 </div>
+<a class="botao-presente" href="LINK_PAGAMENTO" target="_blank"> 🎁 Presentear </a>
+</div>
+
+<!-- Kit Poltrona Decorativa -->
+<div class="card-presente">
+<img class="img-presente" src="IMAGEM_DO_PRODUTO">
+<div class="nome-presente"> Figideira Califórnia Tramontina </div>
+<div class="valor-presente"> R$ 79,99 </div>
+<a class="botao-presente" href="LINK_PAGAMENTO" target="_blank"> 🎁 Presentear </a>
+</div>
+
+<!-- Kit Poltrona Decorativa -->
+<div class="card-presente">
+<img class="img-presente" src="IMAGEM_DO_PRODUTO">
+<div class="nome-presente"> Panela de Pudim Elitec </div>
+<div class="valor-presente"> R$ 59,99 </div>
+<a class="botao-presente" href="LINK_PAGAMENTO" target="_blank"> 🎁 Presentear </a>
+</div>
+
+<!-- Mesa para Computador -->
+<div class="card-presente">
+<img class="img-presente" src="IMAGEM_DO_PRODUTO">
+<div class="nome-presente"> Jogo de Taças Lírio Nadir 365ml </div>
+<div class="valor-presente"> R$ 69,99 </div>
+<a class="botao-presente" href="LINK_PAGAMENTO" target="_blank"> 🎁 Presentear </a>
+</div>
+
+<!-- Kit 2 Puff Banquinho -->
+<div class="card-presente">
+<img class="img-presente" src="IMAGEM_DO_PRODUTO">
+<div class="nome-presente"> Jogo de Sobremesa Madri Havan </div>
+<div class="valor-presente"> R$ 59,99 </div>
+<a class="botao-presente" href="LINK_PAGAMENTO" target="_blank"> 🎁 Presentear </a>
+</div>
+
+<!-- Kit Poltrona Decorativa -->
+<div class="card-presente">
+<img class="img-presente" src="IMAGEM_DO_PRODUTO">
+<div class="nome-presente"> Cafeteira Italiana de Aluminio </div>
+<div class="valor-presente"> R$ 99,99 </div>
+<a class="botao-presente" href="LINK_PAGAMENTO" target="_blank"> 🎁 Presentear </a>
+</div>
+
+<!-- Mesa para Computador -->
+<div class="card-presente">
+<img class="img-presente" src="IMAGEM_DO_PRODUTO">
+<div class="nome-presente"> Jogo de Facas Plenus 7 Peças </div>
+<div class="valor-presente"> R$ 69,99 </div>
+<a class="botao-presente" href="LINK_PAGAMENTO" target="_blank"> 🎁 Presentear </a>
+</div>
+
+<!-- Kit 2 Puff Banquinho -->
+<div class="card-presente">
+<img class="img-presente" src="IMAGEM_DO_PRODUTO">
+<div class="nome-presente"> Boleira com pé e tampa vidro Vitazz </div>
+<div class="valor-presente"> R$ 99,99 </div>
+<a class="botao-presente" href="LINK_PAGAMENTO" target="_blank"> 🎁 Presentear </a>
+</div>
+
+<!-- Mesa de Cabeceira Compacta -->
+<div class="card-presente">
+<img class="img-presente" src="IMAGEM_DO_PRODUTO">
+<div class="nome-presente"> Jogo de Xícaras de café Lyor </div>
+<div class="valor-presente"> R$ 59,99 </div>
+<a class="botao-presente" href="LINK_PAGAMENTO" target="_blank"> 🎁 Presentear </a>
+</div>
+
+<!-- Mesa para Computador -->
+<div class="card-presente">
+<img class="img-presente" src="IMAGEM_DO_PRODUTO">
+<div class="nome-presente"> Prato Raso Cerâmica Naturalle </div>
+<div class="valor-presente"> R$ 29,99 </div>
+<a class="botao-presente" href="LINK_PAGAMENTO" target="_blank"> 🎁 Presentear </a>
+</div>
+
+<!-- Mesa para Computador -->
+<div class="card-presente">
+<img class="img-presente" src="IMAGEM_DO_PRODUTO">
+<div class="nome-presente"> Prato Fundo Cerâmica Naturalle </div>
+<div class="valor-presente"> R$ 24,99 </div>
+<a class="botao-presente" href="LINK_PAGAMENTO" target="_blank"> 🎁 Presentear </a>
+</div>
+
+<!-- Mesa para Computador -->
+<div class="card-presente">
+<img class="img-presente" src="IMAGEM_DO_PRODUTO">
+<div class="nome-presente"> Prato de Sobremesa Cerâmica Naturalle </div>
+<div class="valor-presente"> R$ 19,99 </div>
+<a class="botao-presente" href="LINK_PAGAMENTO" target="_blank"> 🎁 Presentear </a>
+</div>
+
+<!-- Penteadeira Suspensa -->
+<div class="card-presente">
+<img class="img-presente" src="IMAGEM_DO_PRODUTO">
+<div class="nome-presente"> Secador de Saladas Plasútil 2.8L </div>
+<div class="valor-presente"> R$ 39,99 </div>
+<a class="botao-presente" href="LINK_PAGAMENTO" target="_blank"> 🎁 Presentear </a>
+</div>
+
+<!-- Kit Poltrona Decorativa -->
+<div class="card-presente">
+<img class="img-presente" src="IMAGEM_DO_PRODUTO">
+<div class="nome-presente"> Assadeira Redonda Opaline Marinex </div>
+<div class="valor-presente"> R$ 49,99 </div>
+<a class="botao-presente" href="LINK_PAGAMENTO" target="_blank"> 🎁 Presentear </a>
+</div>
+
+<!-- Penteadeira Suspensa -->
+<div class="card-presente">
+<img class="img-presente" src="IMAGEM_DO_PRODUTO">
+<div class="nome-presente"> Escorredor de louça </div>
+<div class="valor-presente"> R$ 91,90 </div>
+<a class="botao-presente" href="LINK_PAGAMENTO" target="_blank"> 🎁 Presentear </a>
+</div>
+
+<!-- Mesa de Cabeceira Compacta -->
+<div class="card-presente">
+<img class="img-presente" src="IMAGEM_DO_PRODUTO">
+<div class="nome-presente"> Tábua de passar roupa </div>
+<div class="valor-presente"> R$ 75,90 </div>
+<a class="botao-presente" href="LINK_PAGAMENTO" target="_blank"> 🎁 Presentear </a>
+</div>
+
+<!-- Penteadeira Suspensa -->
+<div class="card-presente">
+<img class="img-presente" src="IMAGEM_DO_PRODUTO">
+<div class="nome-presente"> Tábua de corte </div>
+<div class="valor-presente"> R$ 67,89 </div>
+<a class="botao-presente" href="LINK_PAGAMENTO" target="_blank"> 🎁 Presentear </a>
+</div>
+
+<!-- Mesa de Cabeceira Compacta -->
+<div class="card-presente">
+<img class="img-presente" src="IMAGEM_DO_PRODUTO">
+<div class="nome-presente"> Jogo de Talheres Tramontina </div>
+<div class="valor-presente"> R$ 65,90 </div>
+<a class="botao-presente" href="LINK_PAGAMENTO" target="_blank"> 🎁 Presentear </a>
+</div>
+
+<!--------------------------------------------------------------------------------------------------->
+<!---------------------------------- entre 100,00 a 200,00 ------------------------------------------>
+
+<!-- Penteadeira Suspensa -->
+<div class="card-presente">
+<img class="img-presente" src="IMAGEM_DO_PRODUTO">
+<div class="nome-presente"> Torradeira Mondial </div>
+<div class="valor-presente"> R$ 109,90 </div>
+<a class="botao-presente" href="LINK_PAGAMENTO" target="_blank"> 🎁 Presentear </a>
+</div>
+
+<!-- Mesa de Cabeceira Compacta -->
+<div class="card-presente">
+<img class="img-presente" src="IMAGEM_DO_PRODUTO">
+<div class="nome-presente"> Mesa de Cabeceira Compacta </div>
+<div class="valor-presente"> R$ 149,90 </div>
+<a class="botao-presente" href="LINK_PAGAMENTO" target="_blank"> 🎁 Presentear </a>
+</div>
+
+<!-- Mesa de Cabeceira Compacta -->
+<div class="card-presente">
+<img class="img-presente" src="IMAGEM_DO_PRODUTO">
+<div class="nome-presente"> Jogo de Toalhas de Banho 4 Peças Karsten </div>
+<div class="valor-presente"> R$ 149,90 </div>
+<a class="botao-presente" href="LINK_PAGAMENTO" target="_blank"> 🎁 Presentear </a>
+</div>
+
+<!-- Kit Poltrona Decorativa -->
+<div class="card-presente">
+<img class="img-presente" src="IMAGEM_DO_PRODUTO">
+<div class="nome-presente"> Cobre Leito Colcha Casal Queen </div>
+<div class="valor-presente"> R$ 184,99 </div>
+<a class="botao-presente" href="LINK_PAGAMENTO" target="_blank"> 🎁 Presentear </a>
+</div>
+
+<!-- Kit Poltrona Decorativa -->
+<div class="card-presente">
+<img class="img-presente" src="IMAGEM_DO_PRODUTO">
+<div class="nome-presente"> Crepeira Elétrica Mondial </div>
+<div class="valor-presente"> R$ 164,99 </div>
+<a class="botao-presente" href="LINK_PAGAMENTO" target="_blank"> 🎁 Presentear </a>
+</div>
+
+<!-- Kit Poltrona Decorativa -->
+<div class="card-presente">
+<img class="img-presente" src="IMAGEM_DO_PRODUTO">
+<div class="nome-presente"> Espremedor de Frutas Mondial Turbo </div>
+<div class="valor-presente"> R$ 185,90 </div>
+<a class="botao-presente" href="LINK_PAGAMENTO" target="_blank"> 🎁 Presentear </a>
+</div>
+
+<!-- Kit Poltrona Decorativa -->
+<div class="card-presente">
+<img class="img-presente" src="IMAGEM_DO_PRODUTO">
+<div class="nome-presente"> Aspirador de Pó Vertical Kärcher </div>
+<div class="valor-presente"> R$ 158,00 </div>
+<a class="botao-presente" href="LINK_PAGAMENTO" target="_blank"> 🎁 Presentear </a>
+</div>
+
+<!-- Mesa para Computador -->
+<div class="card-presente">
+<img class="img-presente" src="IMAGEM_DO_PRODUTO">
+<div class="nome-presente"> 2 Mantas Xale Gigante Para Sofá </div>
+<div class="valor-presente"> R$ 179,90 </div>
+<a class="botao-presente" href="LINK_PAGAMENTO" target="_blank"> 🎁 Presentear </a>
+</div>
+
+<!-- Kit 2 Puff Banquinho -->
+<div class="card-presente">
+<img class="img-presente" src="IMAGEM_DO_PRODUTO">
+<div class="nome-presente"> Cortina Blackout 2,80x2,30 </div>
+<div class="valor-presente"> R$ 158,90 </div>
+<a class="botao-presente" href="LINK_PAGAMENTO" target="_blank"> 🎁 Presentear </a>
+</div>
+
+<!-- Penteadeira Suspensa -->
+<div class="card-presente">
+<img class="img-presente" src="IMAGEM_DO_PRODUTO">
+<div class="nome-presente"> Liquidificador Philco 1200W </div>
+<div class="valor-presente"> R$ 135,79 </div>
+<a class="botao-presente" href="LINK_PAGAMENTO" target="_blank"> 🎁 Presentear </a>
+</div>
+
+<!-- Mesa para Computador -->
+<div class="card-presente">
+<img class="img-presente" src="IMAGEM_DO_PRODUTO">
+<div class="nome-presente"> Saia para Caba Box Queen </div>
+<div class="valor-presente"> R$ 109,99 </div>
+<a class="botao-presente" href="LINK_PAGAMENTO" target="_blank"> 🎁 Presentear </a>
+</div>
+
+<!-- Penteadeira Suspensa -->
+<div class="card-presente">
+<img class="img-presente" src="IMAGEM_DO_PRODUTO">
+<div class="nome-presente"> Panela Elétrica de Arroz Britânia </div>
+<div class="valor-presente"> R$ 199,90 </div>
+<a class="botao-presente" href="LINK_PAGAMENTO" target="_blank"> 🎁 Presentear </a>
+</div>
+
+<!-- Kit 2 Puff Banquinho -->
+<div class="card-presente">
+<img class="img-presente" src="IMAGEM_DO_PRODUTO">
+<div class="nome-presente"> Liquidificador Diamante 800 Britânia </div>
+<div class="valor-presente"> R$ 179,90 </div>
+<a class="botao-presente" href="LINK_PAGAMENTO" target="_blank"> 🎁 Presentear </a>
+</div>
+
+<!-- Penteadeira Suspensa -->
+<div class="card-presente">
+<img class="img-presente" src="IMAGEM_DO_PRODUTO">
+<div class="nome-presente"> Jogo de Facas Plenus 05 Peças e Suporte </div>
+<div class="valor-presente"> R$ 129,99 </div>
+<a class="botao-presente" href="LINK_PAGAMENTO" target="_blank"> 🎁 Presentear </a>
+</div>
+
+<!-- Mesa para Computador -->
+<div class="card-presente">
+<img class="img-presente" src="IMAGEM_DO_PRODUTO">
+<div class="nome-presente"> Mesa para Computador </div>
+<div class="valor-presente"> R$ 179,90 </div>
+<a class="botao-presente" href="LINK_PAGAMENTO" target="_blank"> 🎁 Presentear </a>
+</div>
+
+<!-- Kit 2 Puff Banquinho -->
+<div class="card-presente">
+<img class="img-presente" src="IMAGEM_DO_PRODUTO">
+<div class="nome-presente"> Kit 2 Puff Banquinho </div>
+<div class="valor-presente"> R$ 139,00 </div>
+<a class="botao-presente" href="LINK_PAGAMENTO" target="_blank"> 🎁 Presentear </a>
+</div>
+
+<!-- Mesa de Cabeceira Compacta -->
+<div class="card-presente">
+<img class="img-presente" src="IMAGEM_DO_PRODUTO">
+<div class="nome-presente"> Jogo de Assadeiras 3 Peças Portuguesa </div>
+<div class="valor-presente"> R$ 159,99 </div>
+<a class="botao-presente" href="LINK_PAGAMENTO" target="_blank"> 🎁 Presentear </a>
+</div>
+
+<!-- Penteadeira Suspensa -->
+<div class="card-presente">
+<img class="img-presente" src="IMAGEM_DO_PRODUTO">
+<div class="nome-presente"> Espremedor de Frutas Philco </div>
+<div class="valor-presente"> R$ 199,90 </div>
+<a class="botao-presente" href="LINK_PAGAMENTO" target="_blank"> 🎁 Presentear </a>
+</div>
+
+<!-- Mesa de Cabeceira Compacta -->
+<div class="card-presente">
+<img class="img-presente" src="IMAGEM_DO_PRODUTO">
+<div class="nome-presente"> Jogo de Fondue Havan </div>
+<div class="valor-presente"> RR$ 169,99 </div>
+<a class="botao-presente" href="LINK_PAGAMENTO" target="_blank"> 🎁 Presentear </a>
+</div>
+
+<!-- Mesa para Computador -->
+<div class="card-presente">
+<img class="img-presente" src="IMAGEM_DO_PRODUTO">
+<div class="nome-presente"> Jogo de Cama Bordado Queen </div>
+<div class="valor-presente"> R$ 179,99 </div>
+<a class="botao-presente" href="LINK_PAGAMENTO" target="_blank"> 🎁 Presentear </a>
+</div>
+
+<!-- Kit 2 Puff Banquinho -->
+<div class="card-presente">
+<img class="img-presente" src="IMAGEM_DO_PRODUTO">
+<div class="nome-presente"> Aparelho de Jantar </div>
+<div class="valor-presente"> R$ 195,99 </div>
+<a class="botao-presente" href="LINK_PAGAMENTO" target="_blank"> 🎁 Presentear </a>
+</div>
+
+<!-- Mesa de Cabeceira Compacta -->
+<div class="card-presente">
+<img class="img-presente" src="IMAGEM_DO_PRODUTO">
+<div class="nome-presente"> Jogo de Assadeiras Tramontina </div>
+<div class="valor-presente"> R$ 149,80 </div>
+<a class="botao-presente" href="LINK_PAGAMENTO" target="_blank"> 🎁 Presentear </a>
+</div>
+
+<!--------------------------------------------------------------------------------------------------->
+<!---------------------------------- acima de 200,00 ------------------------------------------------>
+
+<!-- Kit 2 Puff Banquinho -->
+<div class="card-presente">
+<img class="img-presente" src="IMAGEM_DO_PRODUTO">
+<div class="nome-presente"> Aspirador de Pó e Água Wap </div>
+<div class="valor-presente"> R$ 242,00 </div>
+<a class="botao-presente" href="LINK_PAGAMENTO" target="_blank"> 🎁 Presentear </a>
+</div>
+
+<!-- Mesa de Cabeceira Compacta -->
+<div class="card-presente">
+<img class="img-presente" src="IMAGEM_DO_PRODUTO">
+<div class="nome-presente"> Panela de Pressão Elétrica Mondial </div>
+<div class="valor-presente"> R$ 389,00 </div>
+<a class="botao-presente" href="LINK_PAGAMENTO" target="_blank"> 🎁 Presentear </a>
+</div>
+
+<!-- Kit Poltrona Decorativa -->
+<div class="card-presente">
+<img class="img-presente" src="IMAGEM_DO_PRODUTO">
+<div class="nome-presente"> Multiprocessador de Alimentos Mondial </div>
+<div class="valor-presente"> R$ 289,00 </div>
+<a class="botao-presente" href="LINK_PAGAMENTO" target="_blank"> 🎁 Presentear </a>
+</div>
+
+<!-- Mesa para Computador -->
+<div class="card-presente">
+<img class="img-presente" src="IMAGEM_DO_PRODUTO">
+<div class="nome-presente"> Pillow Top Ortobom 200 Fios </div>
+<div class="valor-presente"> R$ 361,91 </div>
+<a class="botao-presente" href="LINK_PAGAMENTO" target="_blank"> 🎁 Presentear </a>
+</div>
+
+<!-- Mesa para Computador -->
+<div class="card-presente">
+<img class="img-presente" src="IMAGEM_DO_PRODUTO">
+<div class="nome-presente"> Purificado de Água Consul </div>
+<div class="valor-presente"> R$ 359,00 </div>
+<a class="botao-presente" href="LINK_PAGAMENTO" target="_blank"> 🎁 Presentear </a>
+</div>
+
+<!-- Kit 2 Puff Banquinho -->
+<div class="card-presente">
+<img class="img-presente" src="IMAGEM_DO_PRODUTO">
+<div class="nome-presente"> Mixer 2 em 1 Mondial 500W </div>
+<div class="valor-presente"> R$ 209,90 </div>
+<a class="botao-presente" href="LINK_PAGAMENTO" target="_blank"> 🎁 Presentear </a>
+</div>
+
+<!-- Penteadeira Suspensa -->
+<div class="card-presente">
+<img class="img-presente" src="IMAGEM_DO_PRODUTO">
+<div class="nome-presente"> Cômoda 8 Gavetas Doble </div>
+<div class="valor-presente"> R$ 774,98 </div>
+<a class="botao-presente" href="LINK_PAGAMENTO" target="_blank"> 🎁 Presentear </a>
+</div>
+
+<!-- Mesa de Cabeceira Compacta -->
+<div class="card-presente">
+<img class="img-presente" src="IMAGEM_DO_PRODUTO">
+<div class="nome-presente"> Batedeira Planetária Philco </div>
+<div class="valor-presente"> R$ 299,00 </div>
+<a class="botao-presente" href="LINK_PAGAMENTO" target="_blank"> 🎁 Presentear </a>
+</div>
+
+<!-- Mesa de Cabeceira Compacta -->
+<div class="card-presente">
+<img class="img-presente" src="IMAGEM_DO_PRODUTO">
+<div class="nome-presente"> Air Fryer Mondial Forno </div>
+<div class="valor-presente"> R$ 559,03 </div>
+<a class="botao-presente" href="LINK_PAGAMENTO" target="_blank"> 🎁 Presentear </a>
+</div>
+
+<!-- Kit Poltrona Decorativa -->
+<div class="card-presente">
+<img class="img-presente" src="IMAGEM_DO_PRODUTO">
+<div class="nome-presente"> Smart TV LED 32’’ Samsung </div>
+<div class="valor-presente"> R$ 999,99 </div>
+<a class="botao-presente" href="LINK_PAGAMENTO" target="_blank"> 🎁 Presentear </a>
+</div>
+
+<!-- Mesa de Cabeceira Compacta -->
+<div class="card-presente">
+<img class="img-presente" src="IMAGEM_DO_PRODUTO">
+<div class="nome-presente"> Panificadora Elétrica Britânia </div>
+<div class="valor-presente"> R$ 799,90 </div>
+<a class="botao-presente" href="LINK_PAGAMENTO" target="_blank"> 🎁 Presentear </a>
+</div>
+
+<!-- Kit 2 Puff Banquinho -->
+<div class="card-presente">
+<img class="img-presente" src="IMAGEM_DO_PRODUTO">
+<div class="nome-presente"> Faqueiro Tramontina 72 Peças </div>
+<div class="valor-presente"> R$ 599,70 </div>
+<a class="botao-presente" href="LINK_PAGAMENTO" target="_blank"> 🎁 Presentear </a>
+</div>
+
+<!-- Mesa de Cabeceira Compacta -->
+<div class="card-presente">
+<img class="img-presente" src="IMAGEM_DO_PRODUTO">
+<div class="nome-presente"> Pipoqueira Britânia </div>
+<div class="valor-presente"> R$ 249,90 </div>
+<a class="botao-presente" href="LINK_PAGAMENTO" target="_blank"> 🎁 Presentear </a>
+</div>
+
+<!-- Kit Poltrona Decorativa -->
+<div class="card-presente">
+<img class="img-presente" src="IMAGEM_DO_PRODUTO">
+<div class="nome-presente"> Kit Poltrona Decorativa </div>
+<div class="valor-presente"> R$ 449,99 </div>
+<a class="botao-presente" href="LINK_PAGAMENTO" target="_blank"> 🎁 Presentear </a>
+</div>
+
+<!-- Mesa para Computador -->
+<div class="card-presente">
+<img class="img-presente" src="IMAGEM_DO_PRODUTO">
+<div class="nome-presente"> Sanduicheira e Grill Philco </div>
+<div class="valor-presente"> R$ 279,90 </div>
+<a class="botao-presente" href="LINK_PAGAMENTO" target="_blank"> 🎁 Presentear </a>
+</div>
+
+<!-- Kit 2 Puff Banquinho -->
+<div class="card-presente">
+<img class="img-presente" src="IMAGEM_DO_PRODUTO">
+<div class="nome-presente"> Forno Elétrico 44 Litros </div>
+<div class="valor-presente"> R$ 599,90 </div>
+<a class="botao-presente" href="LINK_PAGAMENTO" target="_blank"> 🎁 Presentear </a>
+</div>
+
+<!-- Penteadeira Suspensa -->
+<div class="card-presente">
+<img class="img-presente" src="IMAGEM_DO_PRODUTO">
+<div class="nome-presente"> Ferro a Vapor Black-Decker </div>
+<div class="valor-presente"> R$ 229,90 </div>
+<a class="botao-presente" href="LINK_PAGAMENTO" target="_blank"> 🎁 Presentear </a>
+</div>
+
+<!-- Mesa para Computador -->
+<div class="card-presente">
+<img class="img-presente" src="IMAGEM_DO_PRODUTO">
+<div class="nome-presente"> Jogo de Panela Tramontina Califórnia </div>
+<div class="valor-presente"> R$ 399,90 </div>
+<a class="botao-presente" href="LINK_PAGAMENTO" target="_blank"> 🎁 Presentear </a>
+</div>
+
+<!-- Penteadeira Suspensa -->
+<div class="card-presente">
+<img class="img-presente" src="IMAGEM_DO_PRODUTO">
+<div class="nome-presente"> Micro-ondas LG 30 Litros </div>
+<div class="valor-presente"> R$ 799,90 </div>
+<a class="botao-presente" href="LINK_PAGAMENTO" target="_blank"> 🎁 Presentear </a>
+</div>
+
+<!-- Kit Poltrona Decorativa -->
+<div class="card-presente">
+<img class="img-presente" src="IMAGEM_DO_PRODUTO">
+<div class="nome-presente"> Jogo de Prato Raso Cerâmica Naturalle </div>
+<div class="valor-presente"> R$ 299,99 </div>
+<a class="botao-presente" href="LINK_PAGAMENTO" target="_blank"> 🎁 Presentear </a>
+</div>
+
+<!-- Kit Poltrona Decorativa -->
+<div class="card-presente">
+<img class="img-presente" src="IMAGEM_DO_PRODUTO">
+<div class="nome-presente"> Jogo de Prato Fundo Cerâmica Naturalle </div>
+<div class="valor-presente"> R$ 249,99 </div>
+<a class="botao-presente" href="LINK_PAGAMENTO" target="_blank"> 🎁 Presentear </a>
+</div>
+
+<!-- Kit Poltrona Decorativa -->
+<div class="card-presente">
+<img class="img-presente" src="IMAGEM_DO_PRODUTO">
+<div class="nome-presente"> Jogo de Prato de Sobremesa Cerâmica Naturalle </div>
+<div class="valor-presente"> R$ 209,99 </div>
+<a class="botao-presente" href="LINK_PAGAMENTO" target="_blank"> 🎁 Presentear </a>
+</div>
+
+<!-- Kit 2 Puff Banquinho -->
+<div class="card-presente">
+<img class="img-presente" src="IMAGEM_DO_PRODUTO">
+<div class="nome-presente"> Aparelho de Jantar e Chá Unni </div>
+<div class="valor-presente"> R$ 349,90 </div>
+<a class="botao-presente" href="LINK_PAGAMENTO" target="_blank"> 🎁 Presentear </a>
+</div>
+
+<!-- Mesa de Cabeceira Compacta -->
+<div class="card-presente">
+<img class="img-presente" src="IMAGEM_DO_PRODUTO">
+<div class="nome-presente"> Aparelho de Jantar Charlotte Schmidt </div>
+<div class="valor-presente"> R$ 699,90 </div>
+<a class="botao-presente" href="LINK_PAGAMENTO" target="_blank"> 🎁 Presentear </a>
+</div>
+
+<!-- Kit 2 Puff Banquinho -->
+<div class="card-presente">
+<img class="img-presente" src="IMAGEM_DO_PRODUTO">
+<div class="nome-presente"> Robô Aspirador e Passa Pano KABUM </div>
+<div class="valor-presente"> R$ 941,06 </div>
+<a class="botao-presente" href="LINK_PAGAMENTO" target="_blank"> 🎁 Presentear </a>
+</div>
+
+</div> 
+</body> 
+</html>
