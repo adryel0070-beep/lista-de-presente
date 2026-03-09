@@ -8,15 +8,6 @@ font-family:'Segoe UI',sans-serif;
 margin:0;
 padding:50px 20px;
 color:white;
-
-/* IMAGEM DE FUNDO */
-background-image:url("https://i.postimg.cc/r0j2qS24/Whats-App-Image-2026-03-09-at-15-23-34.jpg");
-background-size:contain;
-background-position:center;
-background-repeat:no-repeat;
-background-attachment:fixed;
-
-/* overlay escuro para melhorar leitura */
 position:relative;
 }
 
@@ -27,9 +18,16 @@ top:0;
 left:0;
 width:100%;
 height:100%;
-background:rgba(0,0,0,0.45);
+
+background-image:url("https://i.postimg.cc/r0j2qS24/Whats-App-Image-2026-03-09-at-15-23-34.jpg");
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+
+filter:brightness(0.6);
+
 z-index:-1;
-} 
+}
 /* ---------- TÍTULO ---------- */ 
 .titulo-presentes{ text-align:center; font-size:34px; font-weight:600; letter-spacing:1px; margin-bottom:10px; } .subtitulo{ text-align:center; opacity:0.85; margin-bottom:50px; } 
 /* ---------- GRID ---------- */ 
@@ -791,5 +789,6 @@ height:150px;
 </body> 
 
 </html>
+
 
 
