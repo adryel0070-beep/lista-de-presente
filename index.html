@@ -3,7 +3,33 @@
 <head> 
 <meta charset="UTF-8"> 
 <style> /* ---------- CONFIGURAÇÃO GERAL ---------- */ 
-body{ font-family: 'Segoe UI', sans-serif; margin:0; padding:50px 20px; color:white; } 
+body{
+font-family:'Segoe UI',sans-serif;
+margin:0;
+padding:50px 20px;
+color:white;
+
+/* IMAGEM DE FUNDO */
+background-image:url("sua-imagem.jpg");
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+background-attachment:fixed;
+
+/* overlay escuro para melhorar leitura */
+position:relative;
+}
+
+body::before{
+content:"";
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.45);
+z-index:-1;
+} 
 /* ---------- TÍTULO ---------- */ 
 .titulo-presentes{ text-align:center; font-size:34px; font-weight:600; letter-spacing:1px; margin-bottom:10px; } .subtitulo{ text-align:center; opacity:0.85; margin-bottom:50px; } 
 /* ---------- GRID ---------- */ 
@@ -27,7 +53,21 @@ body{ font-family: 'Segoe UI', sans-serif; margin:0; padding:50px 20px; color:wh
 .card-presente:nth-child(4){animation-delay:.3s;} 
 .card-presente:nth-child(5){animation-delay:.4s;} 
 .card-presente:nth-child(6){animation-delay:.5s;} @keyframes fadeUp{ to{ opacity:1; transform:translateY(0); } } 
+@media(max-width:768px){
 
+body{
+padding:30px 15px;
+}
+
+.titulo-presentes{
+font-size:28px;
+}
+
+.img-presente{
+height:150px;
+}
+
+}
 </style> 
 </head> 
 
@@ -749,4 +789,5 @@ body{ font-family: 'Segoe UI', sans-serif; margin:0; padding:50px 20px; color:wh
 
 </div> 
 </body> 
+
 </html>
