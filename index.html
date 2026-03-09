@@ -1,15 +1,11 @@
 <!DOCTYPE html> 
 <html lang="pt-br"> 
 <head> 
-<meta charset="UTF-8"> 
-<style> /* ---------- CONFIGURAÇÃO GERAL ---------- */ 
-body{
-font-family:'Segoe UI',sans-serif;
-margin:0;
-padding:50px 20px;
-color:white;
-position:relative;
-}
+<meta charset="UTF-8">
+
+<style>
+
+/* ---------- CONFIGURAÇÃO GERAL ---------- */
 
 body{
 font-family:'Segoe UI',sans-serif;
@@ -17,7 +13,10 @@ margin:0;
 padding:50px 20px;
 color:white;
 position:relative;
+overflow-x:hidden;
 }
+
+/* FUNDO DESFOCADO (camada 1) */
 
 body::before{
 content:"";
@@ -27,38 +26,155 @@ left:0;
 width:100%;
 height:100%;
 
-background-image:url("https://i.postimg.cc/r0j2qS24/Whats-App-Image-2026-03-09-at-15-23-34.jpg");
-background-size:cover;
-background-position:center;
-background-repeat:no-repeat;
+background:url("https://i.postimg.cc/r0j2qS24/Whats-App-Image-2026-03-09-at-15-23-34.jpg") center/cover no-repeat;
 
-filter:brightness(0.6);
+filter:blur(25px) brightness(0.55);
+transform:scale(1.2);
+
+z-index:-2;
+}
+
+/* FOTO CENTRAL (camada 2) */
+
+body::after{
+content:"";
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+
+background:url("https://i.postimg.cc/r0j2qS24/Whats-App-Image-2026-03-09-at-15-23-34.jpg") center/contain no-repeat;
 
 z-index:-1;
 }
-/* ---------- TÍTULO ---------- */ 
-.titulo-presentes{ text-align:center; font-size:34px; font-weight:600; letter-spacing:1px; margin-bottom:10px; } .subtitulo{ text-align:center; opacity:0.85; margin-bottom:50px; } 
-/* ---------- GRID ---------- */ 
-.grid-presentes{ max-width:1200px; margin:auto; display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:30px; } 
-/* ---------- CARD ---------- */ 
-.card-presente{ background:rgba(255,255,255,0.12); border-radius:18px; border:1px solid rgba(255,255,255,0.25); backdrop-filter:blur(10px); -webkit-backdrop-filter:blur(10px); padding:18px; transition:all .35s ease; position:relative; overflow:hidden; } 
-.card-presente:hover{ transform:translateY(-8px) scale(1.02); box-shadow: 0 15px 35px rgba(0,0,0,0.35); } 
-/* ---------- IMAGEM ---------- */ 
-.img-presente{ width:100%; height:180px; object-fit:cover; border-radius:12px; margin-bottom:15px; } 
-/* ---------- NOME ---------- */ 
-.nome-presente{ font-size:18px; font-weight:600; margin-bottom:6px; } 
-/* ---------- VALOR ---------- */ 
-.valor-presente{ color:#b9ffd1; font-size:16px; margin-bottom:16px; } 
-/* ---------- BOTÃO LUXO ---------- */ 
-.botao-presente{ display:inline-block; padding:12px 26px; border-radius:40px; border:2px solid white; text-decoration:none; color:white; font-weight:500; letter-spacing:0.5px; transition:all .3s ease; } 
-.botao-presente:hover{ background:white; color:#2e7d32; transform:scale(1.05); box-shadow: 0 8px 20px rgba(0,0,0,0.35); } 
-/* ---------- ANIMAÇÃO ENTRADA ---------- */ 
-.card-presente{ opacity:0; transform:translateY(40px); animation:fadeUp 0.8s ease forwards; } 
-.card-presente:nth-child(2){animation-delay:.1s;} 
-.card-presente:nth-child(3){animation-delay:.2s;} 
-.card-presente:nth-child(4){animation-delay:.3s;} 
-.card-presente:nth-child(5){animation-delay:.4s;} 
-.card-presente:nth-child(6){animation-delay:.5s;} @keyframes fadeUp{ to{ opacity:1; transform:translateY(0); } } 
+
+
+/* ---------- TÍTULO ---------- */
+
+.titulo-presentes{
+text-align:center;
+font-size:34px;
+font-weight:600;
+letter-spacing:1px;
+margin-bottom:10px;
+text-shadow:0 4px 12px rgba(0,0,0,0.7);
+}
+
+.subtitulo{
+text-align:center;
+opacity:0.9;
+margin-bottom:50px;
+text-shadow:0 3px 10px rgba(0,0,0,0.7);
+}
+
+
+/* ---------- GRID ---------- */
+
+.grid-presentes{
+max-width:1200px;
+margin:auto;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:30px;
+}
+
+
+/* ---------- CARD ---------- */
+
+.card-presente{
+background:rgba(255,255,255,0.12);
+border-radius:18px;
+border:1px solid rgba(255,255,255,0.25);
+backdrop-filter:blur(10px);
+-webkit-backdrop-filter:blur(10px);
+padding:18px;
+transition:all .35s ease;
+position:relative;
+overflow:hidden;
+}
+
+.card-presente:hover{
+transform:translateY(-8px) scale(1.02);
+box-shadow:0 15px 35px rgba(0,0,0,0.35);
+}
+
+
+/* ---------- IMAGEM ---------- */
+
+.img-presente{
+width:100%;
+height:180px;
+object-fit:cover;
+border-radius:12px;
+margin-bottom:15px;
+}
+
+
+/* ---------- NOME ---------- */
+
+.nome-presente{
+font-size:18px;
+font-weight:600;
+margin-bottom:6px;
+}
+
+
+/* ---------- VALOR ---------- */
+
+.valor-presente{
+color:#b9ffd1;
+font-size:16px;
+margin-bottom:16px;
+}
+
+
+/* ---------- BOTÃO LUXO ---------- */
+
+.botao-presente{
+display:inline-block;
+padding:12px 26px;
+border-radius:40px;
+border:2px solid white;
+text-decoration:none;
+color:white;
+font-weight:500;
+letter-spacing:0.5px;
+transition:all .3s ease;
+}
+
+.botao-presente:hover{
+background:white;
+color:#2e7d32;
+transform:scale(1.05);
+box-shadow:0 8px 20px rgba(0,0,0,0.35);
+}
+
+
+/* ---------- ANIMAÇÃO ENTRADA ---------- */
+
+.card-presente{
+opacity:0;
+transform:translateY(40px);
+animation:fadeUp 0.8s ease forwards;
+}
+
+.card-presente:nth-child(2){animation-delay:.1s;}
+.card-presente:nth-child(3){animation-delay:.2s;}
+.card-presente:nth-child(4){animation-delay:.3s;}
+.card-presente:nth-child(5){animation-delay:.4s;}
+.card-presente:nth-child(6){animation-delay:.5s;}
+
+@keyframes fadeUp{
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+
+/* ---------- RESPONSIVO ---------- */
+
 @media(max-width:768px){
 
 body{
@@ -74,13 +190,21 @@ height:150px;
 }
 
 }
+
 </style> 
 </head> 
 
 <body> 
-<div class="titulo-presentes"> Nossos Presentes </div> 
-  <div class="subtitulo"> Escolha um presente e nos ajude a construir nosso novo lar 💚 </div> 
-  <div class="grid-presentes"> 
+
+<div class="titulo-presentes">
+Nossos Presentes
+</div>
+
+<div class="subtitulo">
+Escolha um presente e nos ajude a construir nosso novo lar 💚
+</div>
+
+<div class="grid-presentes">
 
 <!---------------------------------- abaixo de 100,00 ----------------------------------------->
 <!-- Penteadeira Suspensa -->
@@ -797,6 +921,7 @@ height:150px;
 </body> 
 
 </html>
+
 
 
 
